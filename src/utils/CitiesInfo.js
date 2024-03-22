@@ -17,7 +17,7 @@ export const citiesInfo = [
 {name:"Kenyan", image:"/assets/kenyanFlag.jpg"},
 {name:"Malaysian", image:"/assets/malaysianFlag.jpg"},
 {name:"Mexican", image:"/assets/mexicanFlag.jpg"},
-{name:"Moroccan", image:"/assets/moroccanFlag.jpg"},
+{name:"Moroccan", image:"/assets/MoroccanFlag.jpg"},
 {name:"Polish", image:"/assets/polishFlag.jpg"},
 {name:"Portuguese", image:"/assets/portugueseFlag.jpg"},
 {name:"Russian", image:"/assets/russianFlag.jpg"},
