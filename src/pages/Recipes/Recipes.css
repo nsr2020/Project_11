@@ -1,0 +1,21 @@
+.countries-section{
+    width: 100%;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    gap: var(--nsr-gap3);
+    padding-top: var(--nsr-padding6);
+    padding-bottom: var(--nsr-padding5);
+    background-image: var(--nsr-bimage2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-link{
+    width: min-content;
+}
+@media (max-width:728px){
+  .countries-section{
+    gap: 0px;
+  }
+}

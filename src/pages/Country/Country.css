@@ -1,0 +1,19 @@
+.home{
+    width: 100%;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    gap: var(--nsr-gap5);
+    padding-top: var(--nsr-padding5);
+    padding-bottom: var(--nsr-padding5);
+    background-image: var(--nsr-bimage2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.areas-link{
+    width: min-content;
+}
+@media (max-width:500px){
+.home{
+    gap: 15px;
+}
+}

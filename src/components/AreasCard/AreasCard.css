@@ -1,0 +1,75 @@
+.areas-card{
+    position: relative;
+    cursor: var(--nsr-cursor1);
+    border-radius: var(--nsr-bradius2);
+    overflow: hidden;
+   outline: 2px solid var(--nsr-color4);
+    transition: transform 0.5s;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 200px;
+}
+.areas-card:hover{
+    transform: scale(1.1);
+    outline: 4px solid var(--nsr-color4);
+}
+.areas-card>.cortina{
+    height: 0px;
+    background-color: rgba(103, 103, 103,0.327);
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s;
+}
+.areas-card:hover>.cortina{
+    height: 100%;
+}
+.areas-card h2{
+    font-size:var(--nsr-font-size5);
+    text-align: center;
+    text-shadow: 4px 3px 0px var(--nsr-color5);
+    color: var(--nsr-color4);
+}
+.areas-card>div{
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 200px;
+}
+.areas-card>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+@media (max-width:500px){
+    .areas-card{
+    min-width: 130px;
+    width: 100%;
+    height: 130px;
+    }
+    .areas-card>div{
+        width: 100%;
+        min-width: 130px;
+        height: 130px;
+    }
+    .areas-card h2{
+        font-size: 35px; 
+    }
+}
+@media (max-width:310px){
+    .areas-card{
+        min-width: 100px;
+        width: 100%;
+        height: 100px;
+        }
+        .areas-card>div{
+            width: 100%;
+            min-width: 100px;
+            height: 100px;
+        }
+        .areas-card h2{
+            font-size: 25px; 
+        }
+}

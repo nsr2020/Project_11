@@ -1,0 +1,10 @@
+.recipe-container{
+    width: 100%;
+    min-height: 100svh;
+    padding-top: var(--nsr-padding6);
+    padding-bottom: var(--nsr-padding5);
+    background-image: var(--nsr-bimage3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
