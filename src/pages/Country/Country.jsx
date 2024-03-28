@@ -18,11 +18,11 @@ const Country = () => {
         });
     }, 1000);
   }, []);
-  
+
 
   return (
     <main className="home flex-container">
-      {!areas.length && <Loading />}{" "}
+      {!areas.length && <Loading />}
       {areas.length &&
         areas.map((area) => (
           <Link

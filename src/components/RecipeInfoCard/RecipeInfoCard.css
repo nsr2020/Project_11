@@ -40,6 +40,7 @@
     color: var(--nsr-color4);
     font-size: var(--nsr-font-size2);
     padding-top: var(--nsr-padding2);
+    white-space: pre-line;
   }
   
   .recipe-links {
