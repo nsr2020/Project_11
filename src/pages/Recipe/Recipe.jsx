@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Recipe.css"
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 import GoBack from "../../components/GoBack/GoBack";
 import RecipeInfoCard from "../../components/RecipeInfoCard/RecipeInfoCard";
@@ -10,11 +10,10 @@ const Recipe = () => {
 
     const { id } = useParams();
     const [recipe, setRecipe] = useState(); 
-    const [loading, setLoading] = useState(true);
     const [notFound, setNotFound] = useState(false);
 
     useEffect(() => {
-        setLoading(true);
+        
         setNotFound(false);
         setTimeout(() => {
             fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -25,11 +24,11 @@ const Recipe = () => {
                     } else {
                         setNotFound(true); 
                     }
-                    setLoading(false);
+                   
                 })
                 .catch(error => {
                     console.error('Error fetching recipe:', error);
-                    setLoading(false);
+                   
                 });
         }, 1000);
     }, []);
@@ -40,12 +39,11 @@ const Recipe = () => {
 
     return (
         <section className="recipe-container flex-container">
-            {loading ? <Loading /> : (
-           <RecipeInfoCard recipe={recipe}/>
+            {!recipe ? <Loading /> : (
+               <RecipeInfoCard recipe={recipe}/>
             )}
-            <Link to={`/Recipes/${recipe?.strArea}`}>
-            <GoBack/>
-            </Link> 
+               <GoBack to={`/Recipes/${recipe?.strArea}`}/>
+            
         </section>
     );
 }

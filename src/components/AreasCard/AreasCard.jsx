@@ -4,9 +4,11 @@ import "./AreasCard.css"
 
 const AreasCard = ({area}) => {
   
-  const findCityInfo = (areaName) => {
-    return citiesInfo.find(city => city.name.toLowerCase() === areaName.toLowerCase());
-  };
+ const findCityInfo = (areaName) => {
+    return citiesInfo.find(
+        city => city.name.toLowerCase() === areaName.toLowerCase()
+    );
+};
 
   
   const cityInfo = findCityInfo(area.strArea);

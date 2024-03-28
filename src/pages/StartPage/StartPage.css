@@ -3,10 +3,8 @@
     height: 100svh;
     flex-direction: column;
     gap: var(--nsr-gap3);
-    /* background: linear-gradient(to right, var(--nsr-color1), var(--nsr-color2));    */
+    background-color: var(--nsr-color9);
     background-image: var(--nsr-bimage1);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .startPage h1{
     color: var(--nsr-color4);

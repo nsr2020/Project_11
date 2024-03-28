@@ -5,9 +5,9 @@
     gap: var(--nsr-gap3);
     padding-top: var(--nsr-padding6);
     padding-bottom: var(--nsr-padding5);
-    background-image: var(--nsr-bimage2);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:var(--nsr-color11);
+    background-image:var(--nsr-bimage3) ;
+
     position: relative;
 }
 
