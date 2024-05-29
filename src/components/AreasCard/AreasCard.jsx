@@ -17,10 +17,10 @@ const AreasCard = ({area}) => {
     <>
    {area.strArea!== "Unknown" &&  <article  className="areas-card">           
     <div className="cortina flex-container">
-    <h2>{area.strArea}</h2>
+    <h2>{area?.strArea}</h2>
     </div>
     <div>
-        <img src={cityInfo.image} alt={area.strArea}/>
+        <img src={cityInfo?.image} alt={area?.strArea}/>
     </div>
   
    </article>}
