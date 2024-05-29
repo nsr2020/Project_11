@@ -15,7 +15,8 @@ const AreasCard = ({area}) => {
   
   return (
     <>
-   {area.strArea!== "Unknown" &&  <article  className="areas-card">           
+   {(area.strArea!== "Unknown" && area.strArea!== "Ukrainian") &&  
+   <article  className="areas-card">           
     <div className="cortina flex-container">
     <h2>{area?.strArea}</h2>
     </div>
